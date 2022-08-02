@@ -1,6 +1,6 @@
 <?php
 
-use App\Http\Controllers\Main\DasboardController;
+use App\Http\Controllers\Main\PagesController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,4 +14,5 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [ DasboardController::class, 'index']);
+Route::get('/', [ PagesController::class, 'index'])->name('home');
+Route::get('/404', [ DasboardController::class, 'pageNotFound'])->name('pageNotFound');
