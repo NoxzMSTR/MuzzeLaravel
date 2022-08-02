@@ -6,7 +6,7 @@
                 <div class="col-4 col-sm-3 col-lg-2">
                     <!-- logo -->
                     <div class="logo logoViv mt-1">
-                        <a href="home.html">
+                        <a href="{{route('home')}}">
                             <img src="{{asset('assets/images/Logo_D_Guillermo_Galeria_transparent.png')}}" class="img-fluid" alt="Muzze || Art &amp; History Museum">
                             
                         </a>
@@ -57,13 +57,13 @@
                             <!-- mainNavigation -->
                             <ul class="navbar-nav mainNavigation text-capitalize">
                                 <li class="nav-item active dropdown">
-                                    <a class="nav-link" href="index.html" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
+                                    <a class="nav-link" href="{{route('home')}}" role="button" aria-haspopup="true" aria-expanded="false">Home</a>
                                     <!-- <a class="nav-link" href="javascript:void(0);" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a> -->
                                     <!-- dropdown menu -->
                                     <!-- <div class="dropdown-menu mndDropMenu mndDropMenuSmall p-0"> -->
                                         <!-- mnDropList -->
                                         <!-- <ul class="list-unstyled mnDropList mb-0 pt-1 pb-1 pt-md-4 pb-md-6">
-                                            <li><a target="_blank" href="home.html">Home Default</a></li>
+                                            <li><a target="_blank" href="{{route('home')}}">Home Default</a></li>
                                             <li><a target="_blank" href="home-classic.html">Home Classic</a></li>
                                             <li><a target="_blank" href="home-creative.html">Home Creative</a></li>
                                             <li><a target="_blank" href="home-fullscreen.html">Home FullScreen</a></li>
@@ -272,8 +272,8 @@
 
                 <div class="dropdown-menu mndDropMenu mndDropMenuSmall p-0">
                     <ul class="list-unstyled mnDropList mb-0">
-                        <li><a target="_blank" href="home.html">Home Default</a></li>
-                        <li><a target="_blank" href="home-classic.html">Home Classic</a></li>
+                        <li><a target="_blank" href="{{route('home')}}">Home</a></li>
+                        {{-- <li><a target="_blank" href="home-classic.html">Home Classic</a></li>
                         <li><a target="_blank" href="home-creative.html">Home Creative</a></li>
                         <li><a target="_blank" href="home-fullscreen.html">Home FullScreen</a></li>
                         <li><a target="_blank" href="home-exhibition.html">Home Exhibition</a></li>
@@ -281,7 +281,7 @@
                         <li><a target="_blank" href="home-minimal.html">Home Minimal</a></li>
                         <li><a target="_blank" href="home-simple-boxed.html">Home Simple Boxed</a></li>
                         <li><a target="_blank" href="home-parallax.html">Home Parallax</a></li>
-                        <li><a target="_blank" href="home-event.html">Home Event</a></li>
+                        <li><a target="_blank" href="home-event.html">Home Event</a></li> --}}
                     </ul>
                 </div>
             </li>
