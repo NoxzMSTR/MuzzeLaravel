@@ -1,7 +1,6 @@
 @extends('layout.main')
 
 @section('content')
-<main>
     <!-- bsSlidViv -->
     <div class="bsSlidViv">
         <div>
@@ -596,5 +595,4 @@
             </div>
         </div>
     </aside>
-</main>
 @endsection
