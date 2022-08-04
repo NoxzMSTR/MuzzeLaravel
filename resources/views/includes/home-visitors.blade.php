@@ -7,17 +7,18 @@
         <div class="row d-block px-sm-16 px-xlwd-0">
             <!-- vsQuoteSlider -->
             <div class="vsQuoteSlider">
+                @foreach ($visitors as $visitor)
                 <div>
                     <div class="col-12">
                         <!-- vsQuote -->
                         <blockquote class="vsQuote text-gray777 mb-0 pl-12 pl-xl-22 pr-11 pt-6 pt-xl-10 pb-4 pb-xl-8 position-relative">
-                            <q class="d-block mb-4">Excelente lugar para comprar arte</q>
+                            <q class="d-block mb-4">{{$visitor['comment']}}</q>
                             <cite class="d-flex align-items-center">
                                 <span class="rounded-circle vsqImage d-block flex-shrink-0 mr-3">
-                                    <img src="https://lh3.googleusercontent.com/a-/AFdZucqJHvXZH0tIoDB6Xe7FqLi5xNvv-dcMx93S0PmGf2k=w60-h60-p-rp-mo-ba5-br100" class="rounded-circle img-fluid" alt="image description">
+                                    <img src="{{$visitor['visitor_img']}}" class="rounded-circle img-fluid" alt="image description">
                                 </span>
                                 <span class="citeWrap d-block">
-                                    <strong class="d-block font-weight-normal fontSerif text-capitalize text-secondary mb-1">Estalin Sanchez - <span class="text-gray777">Local Guide</span></strong>
+                                    <strong class="d-block font-weight-normal fontSerif text-capitalize text-secondary mb-1">{{$visitor['visitor_name']}} - <span class="text-gray777">{{$visitor['visitor_type']}}</span></strong>
                                     <span class="ratingStarListSpan d-flex">
                                         <span class="rslsItem d-block">
                                             <i class="fas fa-star text-yellowClr5"><span class="sr-only">icon</span></i>
@@ -39,41 +40,10 @@
                             </cite>
                         </blockquote>
                     </div>
-                </div>
-                <div>
-                    <div class="col-12">
-                        <!-- vsQuote -->
-                        <blockquote class="vsQuote text-gray777 mb-0 pl-12 pl-xl-22 pr-11 pt-6 pt-xl-10 pb-4 pb-xl-8 position-relative">
-                            <q class="d-block mb-4">Very nice staff ... professional framework, work at affordable prices ... great
-                            </q>
-                            <cite class="d-flex align-items-center">
-                                <span class="rounded-circle vsqImage d-block flex-shrink-0 mr-3">
-                                    <img src="https://lh3.googleusercontent.com/a/AItbvmkekzYZ7DeA3jAfe21tdxB-Vxz-lDh1j5MKWmdU=w36-h36-p-c0x00000000-rp-mo-ba4-br100" class="rounded-circle img-fluid" alt="image description">
-                                </span>
-                                <span class="citeWrap d-block">
-                                    <strong class="d-block font-weight-normal fontSerif text-capitalize text-secondary mb-1">Vincenzo Mancini - <span class="text-gray777">Visitor</span></strong>
-                                    <span class="ratingStarListSpan d-flex">
-                                        <span class="rslsItem d-block">
-                                            <i class="fas fa-star text-yellowClr5"><span class="sr-only">icon</span></i>
-                                        </span>
-                                        <span class="rslsItem d-block">
-                                            <i class="fas fa-star text-yellowClr5"><span class="sr-only">icon</span></i>
-                                        </span>
-                                        <span class="rslsItem d-block">
-                                            <i class="fas fa-star text-yellowClr5"><span class="sr-only">icon</span></i>
-                                        </span>
-                                        <span class="rslsItem d-block">
-                                            <i class="fas fa-star text-yellowClr5"><span class="sr-only">icon</span></i>
-                                        </span>
-                                        <span class="rslsItem d-block">
-                                            <i class="fas fa-star text-yellowClr5"><span class="sr-only">icon</span></i>
-                                        </span>
-                                    </span>
-                                </span>
-                            </cite>
-                        </blockquote>
-                    </div>
-                </div>
+                </div>  
+                @endforeach
+ 
+         
                 <!-- <div>
                     <div class="col-12">
                         
